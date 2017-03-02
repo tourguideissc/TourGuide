@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="skip"><u>SKIP</u></string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password"><u><b>Forgot Password</b></u></string>
+    <string name="security_prompt">Select Question</string>
+    <string-array name="security_questions">
+        <item><b>Select Question</b></item>
+        <item>In what city were you born?</item>
+        <item>What is your favorite movie?</item>
+        <item>What is your favorite color?</item>
+        <item>What is the name of your first grade teacher?</item>
+        <item>What was your high school mascot?</item>
+        <item>What was your favorite place to visit as a child?</item>
+        <item>What was your first phone number?</item>
+    </string-array>
+    <string name="title_activity_map">MapActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="change_password">Change Password</string>
+</resources>

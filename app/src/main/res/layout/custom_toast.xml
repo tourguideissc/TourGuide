@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toast_layout"
+    android:background="@color/pale_yellow"
+    android:gravity="center"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/interest_imageview"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Interest Name"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/interest_name_textview"
+        android:layout_weight="1" />
+</LinearLayout>

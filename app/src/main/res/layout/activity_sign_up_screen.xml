@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context="com.example.rajeev.tourguide.SignUpScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tg_header"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:id="@+id/firstname_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:id="@+id/lastname_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="Contact"
+        android:ems="10"
+        android:id="@+id/contact_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="Email address"
+        android:ems="10"
+        android:id="@+id/email_address_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="Birthdate"
+        android:ems="10"
+        android:id="@+id/birthdate_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="username"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:id="@+id/username_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/password_sign_up" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="ReEnter Password"
+        android:ems="10"
+        android:id="@+id/reenter_password_sign_up" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:entries="@array/security_questions"
+            android:background="@drawable/edittext_focused"
+            android:id="@+id/seq_question_sign_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/down_arrow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageView4" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="10dp"
+        android:hint="Security Answer"
+        android:ems="10"
+        android:id="@+id/seq_answer_sign_up" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/historical"
+            android:tag="Historical &amp; Heritage Sites"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/historical_black"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adventure"
+            android:tag="Adventure"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/adventure_black"
+            android:backgroundTint="#00FFFFFF"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/religious"
+            android:tag="Religious"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/religious_black"
+            android:backgroundTint="#00FFFFFF"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/food_black"
+            android:tag="Food &amp; Lodging"
+            android:backgroundTint="#00FFFFFF"
+            />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/entertainment"
+                android:tag="Entertainment"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/entertainment_black"
+                android:backgroundTint="#00FFFFFF"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beaches"
+                android:tag="Beaches"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/beahes_black"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_weight="4.08" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nature"
+                android:tag="Nature &amp; Wildlife"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/nature_black"
+                android:backgroundTint="#00FFFFFF"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:text="Create User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTintMode="src_in"
+        android:backgroundTint="@color/gray"
+        android:shadowColor="@color/white"
+        android:shadowRadius="3"
+        android:id="@+id/create_new_user_button" />
+</LinearLayout>
+</ScrollView>

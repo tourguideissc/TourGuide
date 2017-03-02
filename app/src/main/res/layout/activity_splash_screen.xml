@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen_linearlayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/tg_background_image"
+    tools:context="com.example.rajeev.tourguide.SplashScreen">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/activity_splash_screen_relativelayout"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tourguidei_con"
+            android:id="@+id/tg_logo"
+            android:layout_marginBottom="-55dp"
+            />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/tg_name"
+            android:src="@drawable/tourguide_header_image"
+            />
+    </LinearLayout>
+
+</LinearLayout>
