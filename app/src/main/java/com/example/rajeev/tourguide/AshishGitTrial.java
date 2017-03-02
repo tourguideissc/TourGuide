@@ -7,5 +7,6 @@ package com.example.rajeev.tourguide;
 public class AshishGitTrial {
 
     int newVariable=0;
+    int onemorenewvariable=5;
 
 }
